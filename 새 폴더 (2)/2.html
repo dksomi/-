@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fu" style="background-color: #ebedf3">
+      <div class="tm" style="margin-left: 450px">
+        <div style="font-size: 28px; padding-top: 70px">
+          테마여행
+          <button class="button-black-left" onclick="plusDivs1(-1)">
+            &#10094;
+          </button>
+          <button class="button-blac-right" onclick="plusDivs1(1)">
+            &#10095;
+          </button>
+        </div>
+
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/FILE/DIABLO/BANNER/VG2/101/2_1_11.jpg"
+          style="width: 380px; height: 285px"
+        />
+        동부지중해 크루즈 MSC 스플렌디다 호
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/FILE/DIABLO/BANNER/VG2/101/2_1_8.jpg"
+          style="width: 380px; height: 285px"
+        />
+        걸으며 만나는 치유의 길 산티아고 순례길
+
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema3.jpg"
+          style="width: 380px; height: 285px"
+        />
+        클래스이 차이 비지니스 상품전
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema4.jpg"
+          style="width: 380px; height: 285px"
+        />NO팁/NO쇼핑/NO옵션 오로지나에게만 집중하는 시간
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema5.jpg"
+          style="width: 380px; height: 285px"
+        />허니문 단 한번의 가장 로맨틱한 휴가
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema2.jpg"
+          style="width: 380px; height: 285px"
+        />괌/사이판 PIC리조트 화려함과 한적함 서로 다른 새로움
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema1.jpg"
+          style="width: 380px; height: 285px"
+        />베트남 빈펄리조트 한번쯤은 만남을 기대하는
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema8.jpg"
+          style="width: 380px; height: 285px"
+        />작은마을이 더 아름답습니다 season 1.이탈리아 소도시
+      </div>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("tm1");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

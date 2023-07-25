@@ -1,0 +1,81 @@
+d<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <div class="img" style="max-width: 1920px; height: 780px">
+      <img
+        class="slides"
+        src="
+    https://contents.verygoodtour.com/Images/pc/package/main/p_main_20230628.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="
+    https://contents.verygoodtour.com/Images/pc/package/main/p_main_13493.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13364.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13374.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13551.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13420.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13430.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13518.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13497.jpg"
+        style="width: 100%; height: 90%"
+      />
+      <img
+        class="slides"
+        src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13526.jpg"
+        style="width: 100%; height: 90%"
+      />
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+        <title>Document</title>
+        </head>
+  <body></body>
+</html>

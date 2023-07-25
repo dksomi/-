@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <style>
+      #header {
+        width: 1900px;
+      }
+      #sub_wrap {
+        width: 1600px;
+        height: 47px;
+        margin-top: 20px;
+        margin-left: 300px;
+      }
+
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: block;
+      }
+      body {
+        font-size: 16px;
+        color: #363636;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+      html {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: block;
+      }
+      #header.sub_wrap.logoWrap {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+      #sub_wrap:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      .logoWrap img {
+        width: 150px;
+        height: 47px;
+      }
+      img {
+        border: 0;
+        vertical-align: middle;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+      a {
+        counter-reset: inherit;
+      }
+      a {
+        cursor: pointer;
+      }
+      #box1 {
+        position: absolute;
+        right: 350px;
+        top: 20px;
+      }
+      .ev1 {
+        position: absolute;
+        top: 20px;
+        right: 910px;
+        z-index: 2;
+      }
+
+      div {
+        display: block;
+      }
+      .hide_name {
+        position: absolute;
+        left: -999em;
+        top: -999em;
+        display: inline-block;
+        text-indent: -999em;
+        overflow: hidden;
+      }
+      #menu.sub_wrap {
+        text-align: left;
+      }
+      .all_menu_view {
+        width: 158px;
+        height: left;
+        vertical-align: middle;
+      }
+      #main_sub {
+        position: absolute;
+        width: 1180px;
+        height: 648px;
+        outline: 1px solid #c3c3c3;
+        z-index: 40;
+        margin: 0 auto;
+        display: none;
+        background-color: #fff;
+        left: 0;
+        top: 39px;
+      }
+      #menu_box ul,
+      menu_ul {
+        position: relative;
+        width: 870px;
+        height: 39px;
+        float: left;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+      }
+      #menu_box ul.menu.ul li {
+        float: left;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+      }
+      li {
+        display: list-item;
+      }
+      #mem_box {
+        position: absolute;
+        width: 350px;
+        left: 830px;
+        top: 4px;
+        z-index: 2;
+      }
+      #mem_box ul > li > a {
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+      }
+      .a00 {
+        margin-left: 300px;
+      }
+      .a00 > a {
+        color: white;
+        padding-left: 30px;
+      }
+      .f0 > h3 a {
+        color: #fff;
+        display: block;
+        font-size: 32px;
+
+        text-align: center;
+        line-height: 77px;
+        height: 77px;
+        font-weight: 400;
+      }
+      .a-4 {
+        width: 590px;
+        height: 77px;
+        margin-left: 1025px;
+        background-color: #ffffff49;
+      }
+      .a-4 > a {
+        color: black;
+        width: 95.7%;
+        text-decoration: none;
+        font-size: 32px;
+        text-align: center;
+        display: inline-block;
+        line-height: 77px;
+      }
+      #menu_box {
+        margin-top: 30px;
+        font-size: 23px;
+        margin-left: 330px;
+      }
+      .ww {
+        float: left;
+      }
+      .f0 {
+        width: 590px;
+        height: 77px;
+        margin-left: 450px;
+        background-color: #0095f1;
+        float: left;
+      }
+      .f0 > a {
+        text-decoration: none;
+      }
+      .vv {
+        margin-left: 450px;
+      }
+      .rr {
+        float: left;
+        width: 124px;
+        height: 60px;
+        font-size: 18px;
+        color: #595955;
+        padding-top: 20px;
+        padding-left: 30px;
+        font-weight: 700;
+      }
+      .rr1 {
+        font-weight: 700;
+        color: #595955;
+        padding-top: 20px;
+        padding-left: 30px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        font-size: 18px;
+        float: left;
+        width: 210px;
+        height: 60px;
+      }
+      .rr2 {
+        font-size: 18px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        float: left;
+        padding-top: 20px;
+        padding-left: 30px;
+        color: #595955;
+        width: 180px;
+        height: 60px;
+        font-weight: 700;
+      }
+      .rr3 {
+        padding-top: 20px;
+        padding-left: 30px;
+        font-size: 18px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        float: left;
+        width: 145px;
+        color: #595955;
+        height: 60px;
+        font-weight: 700;
+      }
+      .rr4 {
+        padding-top: 20px;
+        padding-left: 30px;
+        font-size: 18px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        float: left;
+        font-weight: 700;
+        width: 116px;
+        color: #595955;
+        height: 60px;
+      }
+      .rr5 {
+        padding-top: 20px;
+        padding-left: 30px;
+        font-size: 18px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        float: left;
+        width: 182px;
+        font-weight: 700;
+        height: 60px;
+        color: #595955;
+      }
+      .rr6 {
+        padding-top: 20px;
+        padding-left: 30px;
+        font-size: 18px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        float: left;
+        width: 100px;
+        font-weight: 700;
+        height: 60px;
+        color: #595955;
+      }
+      .rr7 {
+        padding-top: 20px;
+        padding-left: 30px;
+        font-size: 18px;
+        border-left: 1px solid rgba(221, 219, 219, 0.808);
+        float: left;
+        font-weight: 700;
+        width: 130px;
+        color: #595955;
+        height: 60px;
+      }
+
+      .img {
+        padding-top: 20px;
+
+        width: 580px;
+        height: 435px;
+        margin-left: 450px;
+        padding-top: 25px;
+        float: left;
+      }
+      .button-black-left {
+        margin-left: 320px;
+        background-color: white;
+        border: 1px #c3c3c3af;
+        height: 44px;
+        width: 44px;
+        margin-bottom: 20px;
+      }
+      .button-blac-right {
+        background-color: white;
+        border: 1px #c3c3c3af;
+        height: 44px;
+        width: 44px;
+        margin-bottom: 20px;
+      }
+
+      .img1 {
+        max-width: 1920px;
+        height: 780px;
+      }
+      .img3 {
+        max-width: 580px;
+        height: 435px;
+        margin-left: 1050px;
+        margin-top: 62px;
+        padding-top: 25px;
+      }
+      .button1 {
+        margin-left: 450px;
+        margin-top: 45px;
+        font-size: 28px;
+      }
+
+      .button1 > p > button {
+        background-color: white;
+        width: 130px;
+        height: 49px;
+        font-size: 18px;
+        border: 1px solid #009eff;
+        border-radius: 49px;
+        color: #0095f1;
+        font-weight: bold;
+        margin-right: 20px;
+        margin-bottom: 5px;
+      }
+      .button-blac-right2 {
+        height: 44px;
+        width: 44px;
+        background-color: white;
+        border: 1px #c3c3c3da;
+      }
+      .button-black-left2 {
+        margin-left: 280px;
+        background-color: white;
+        border: 1px #c3c3c3da;
+        height: 44px;
+        width: 44px;
+        margin-bottom: 20px;
+      }
+      #searchform > input {
+        width: 550px;
+        height: 55px;
+        border-radius: 54px;
+        border-color: rgb(47, 81, 190);
+        font-size: 16px;
+      }
+      .sj {
+        font-size: 28px;
+      }
+      .sk {
+        width: 200px;
+        height: 150px;
+        border: 1px solid rgba(224, 221, 221, 0.959);
+        float: left;
+      }
+      .jj {
+        width: 600px;
+        height: 300px;
+        margin-left: 580px;
+        border: 1px solid rgba(224, 221, 221, 0.959);
+        padding: 40px 40px 26px;
+      }
+      .jj > p {
+        font-size: 24px;
+        color: black;
+        font-weight: 400;
+        margin-bottom: 12px;
+      }
+      .jj > p1 {
+        font-size: 16px;
+        color: blue;
+        margin-bottom: 25px;
+      }
+      .jj > span {
+        font-size: 14px;
+        color: #797878b0;
+        margin-bottom: 30px;
+        margin-left: 390px;
+      }
+      .fu {
+        background-color: #ebedf3;
+      }
+      .tm {
+        margin-left: 450px;
+      }
+      .button-black-left3 {
+        margin-left: 950px;
+        width: 44px;
+        height: 44px;
+      }
+      .button-blac-right3 {
+        width: 44px;
+        height: 44px;
+      }
+      .tn > span {
+        font-size: 28px;
+        padding-top: 70px;
+      }
+      .tm1 {
+        width: 380px;
+        height: 285px;
+      }
+
+      .oo {
+        margin-left: 450px;
+        font-size: 28px;
+        padding-top: 80px;
+      }
+      .pp2 {
+        float: left;
+      }
+      .a77 {
+        margin-top: 40px;
+      }
+      .a77 > a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        padding-right: 50px;
+      }
+      .a77 > a1 {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+      }
+      .ii {
+        width: 740px;
+        height: 420px;
+        margin-left: 450px;
+        float: left;
+      }
+      .a7 {
+        margin-left: 450px;
+      }
+      .a8 {
+        float: left;
+      }
+      .a8 > p {
+        font-size: 16px;
+        color: #111;
+        margin-bottom: 7px;
+        font-weight: bold;
+      }
+      .a8 > p1 {
+        font-size: 40px;
+        color: #1351a5;
+        font-weight: 700;
+        line-height: 40px;
+        margin-bottom: 15px;
+      }
+      #a0 {
+        background-color: #1351a5;
+        height: 60px;
+        font-size: 16px;
+        margin-top: 40px;
+      }
+      .ha {
+        margin-left: 450px;
+        margin-bottom: 85px;
+      }
+      .hj {
+        float: left;
+        width: 380px;
+        height: 80px;
+        font-size: 18px;
+      }
+      .hj > b > p {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-top: 10px;
+      }
+      .hj > p1 {
+        margin-left: 40px;
+        margin-top: 5px;
+      }
+      .jz {
+        float: left;
+        width: 380px;
+        height: 80px;
+        font-size: 18px;
+      }
+      .jz > b > p {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-top: 10px;
+      }
+      .jz > p1 {
+        margin-left: 40px;
+        margin-top: 5px;
+      }
+      .jh {
+        float: left;
+        width: 380px;
+        height: 80px;
+        font-size: 18px;
+      }
+      .jh > b > p {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-top: 10px;
+      }
+      .jh > p1 {
+        margin-left: 40px;
+        margin-top: 5px;
+      }
+      .qq {
+        width: 400px;
+        height: 420px;
+
+        margin-left: 1190px;
+      }
+      .qq > p {
+        height: 140px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #0274bbe3;
+        font-weight: 700;
+        padding: 50px 40px 0 190px;
+      }
+      .qq > p1 {
+        background-color: #fff;
+        height: 140px;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 50px 40px 0 190px;
+        display: block;
+      }
+      .qq > p2 {
+        background-color: #fff;
+        height: 140px;
+        font-size: 20px;
+        font-weight: 700;
+        display: block;
+        padding: 50px 40px 0 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div id="sub_wrap">
+        <div class="logowrap">
+          <a href="/">
+            <img
+              src="https://www.verygoodtour.com/Images/2013/Common/logo.png"
+            />
+          </a>
+        </div>
+        <div id="box1">
+          <div id="searchform">
+            <label for="search_bar" class="hide"></label>
+            <input
+              autocomplete="off"
+              id="search_bar"
+              type="text"
+              placeholder="어디로 떠나고 싶으세요?"
+              name="keyword"
+            />
+          </div>
+        </div>
+        <div class="ev1">
+          <a href="/Event/EventPromotion?evtno=20230627">
+            <img
+              src="https://contents.verygoodtour.com/Images/pc/aside/main_aside_common_230717.jpg"
+              alt
+            />
+          </a>
+        </div>
+      </div>
+      <div id="menu">
+        <div class="main_menu">
+          <h2 class="hide_name">메인메뉴</h2>
+          <div
+            id="menu_box"
+            style="margin-top: 30px; font-size: 23px; margin-left: 330px"
+          >
+            <div id="all_menu_view">
+              <div class="all_menu_view_bt">
+                <i class="fas fa-align-justify" style="font-size: 24px"></i>
+                <a
+                  href="javascript:void(0);"
+                  title="전체메뉴"
+                  style="text-decoration: none"
+                  >전체메뉴</a
+                >
+              </div>
+              <div id="main_sub"></div>
+
+              <ul class="menu_u1" style="font-size: 22px">
+                <li
+                  data-menucode="101"
+                  class="select"
+                  style="margin-left: 100px"
+                >
+                  <a
+                    href="Home/PackageMain?MenuCode=101"
+                    title="해외여행"
+                    style="text-decoration: none"
+                    >해외여행</a
+                  >
+                </li>
+                <li
+                  data-menucode="105"
+                  class="select"
+                  style="margin-left: 30px"
+                >
+                  <a
+                    href="Home/PackageMain?MenuCode=101"
+                    title="국내/제주"
+                    style="text-decoration: none"
+                    >국내/제주</a
+                  >
+                </li>
+                <li
+                  data-menucode="102"
+                  class="select"
+                  style="margin-left: 30px"
+                >
+                  <a
+                    href="Home/PackageMain?MenuCode=101"
+                    title="프리미엄"
+                    style="text-decoration: none"
+                    >프리미엄</a
+                  >
+                </li>
+                <li
+                  data-menucode="101"
+                  class="select"
+                  style="margin-left: 30px; color: black"
+                >
+                  <a
+                    href="Home/PackageMain?MenuCode=101"
+                    title="지방출발"
+                    style="text-decoration: none"
+                    >지방출발</a
+                  >
+                </li>
+                <li
+                  data-menucode="101"
+                  class="select"
+                  style="margin-left: 30px"
+                >
+                  <a
+                    href="Home/PackageMain?MenuCode=101"
+                    title="항공/호텔"
+                    style="text-decoration: none"
+                    >항공/호텔</a
+                  >
+                </li>
+                <li
+                  data-menucode="101"
+                  class="select"
+                  style="margin-left: 30px"
+                >
+                  <a
+                    href="Home/PackageMain?MenuCode=101"
+                    title="라르고/테마"
+                    style="text-decoration: none"
+                    >라르고/테마</a
+                  >
+                </li>
+              </ul>
+              <div id="mem_box" style="margin-top: 100px">
+                <ul>
+                  <li>
+                    <a
+                      href="/Login"
+                      title="로그인/회원가입"
+                      style="text-decoration: none"
+                      >로그인/회원가입</a
+                    >
+                  </li>
+                  <li style="padding-left: 20px">
+                    <a
+                      href="Board/BoardCommonList?MasterSeq=1&menuCode=10901"
+                      title="여행후기"
+                      style="text-decoration: none"
+                      >여행후기</a
+                    >
+                  </li>
+                  <li style="padding-left: 20px">
+                    <a
+                      href="Support/Main"
+                      title="고객센터"
+                      style="text-decoration: none"
+                      >고객센터</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="a0">
+            <div class="a00" style="padding-top: 20px">
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >연휴출발</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none">유럽</a>
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >동남아</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none">일본</a>
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >대만/홍콩/마카오</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >중국/몽골</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >호주/뉴질랜드</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >괌/사이판</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >미국/캐나다/하와이</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >중남미</a
+              >
+              <a href="Home/PackageMain" style="text-decoration: none"
+                >중동/아프리카/인도</a
+              >
+            </div>
+          </div>
+          <div class="img1" style="max-width: 1920px; height: 780px">
+            <img
+              class="slides"
+              src="
+          https://contents.verygoodtour.com/Images/pc/package/main/p_main_20230628.jpg"
+              style="width: 100%; height: 90%; position: relative"
+            />
+
+            <img
+              class="slides"
+              src="
+          https://contents.verygoodtour.com/Images/pc/package/main/p_main_13493.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13364.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13374.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13551.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13420.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13430.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13518.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13497.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slides"
+              src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13526.jpg"
+              style="width: 100%; height: 90%"
+            />
+          </div>
+          <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("slides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {
+                myIndex = 1;
+              }
+              x[myIndex - 1].style.display = "block";
+              setTimeout(carousel, 2000);
+            }
+          </script>
+
+          <div class="f0">
+            <h3>
+              <a href=""> 어디로 갈까요?</a>
+            </h3>
+          </div>
+          <div class="a-4">
+            <a href="">누구와 떠날까요?</a>
+            <div class="a-5"></div>
+          </div>
+          <div class="vv">
+            <div class="rr">
+              <span>유럽/중동</span>
+            </div>
+            <div class="rr1">
+              <span>미국/캐나다/중남미</span>
+            </div>
+            <div class="rr2">
+              <span> 호주/뉴질랜드</span>
+            </div>
+            <div class="rr3">
+              <span>괌/사이판</span>
+            </div>
+            <div class="rr4">
+              <span>동남아</span>
+            </div>
+            <div class="rr5">
+              <span> 대만/홍콩/마카오</span>
+            </div>
+            <div class="rr6">
+              <span> 일본</span>
+            </div>
+            <div class="rr7">
+              <span>중국/몽골</span>
+            </div>
+          </div>
+          <div class="img">
+            <span style="font-size: 28px">주목할상품</span>
+            <button class="button-black-left" onclick="plusDivs(-1)">
+              &#10094;
+            </button>
+            <button class="button-blac-right" onclick="plusDivs(1)">
+              &#10095;
+            </button>
+            <img
+              class="slidess"
+              src="
+              https://contents.verygoodtour.com/content/350/IN/0000/AGR/image/1853630_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+                  https://contents.verygoodtour.com/content/210/ES/0000/BCN/image/1901403_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+             https://contents.verygoodtour.com/content/210/SE/0000/STO/image/1928620_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+              https://contents.verygoodtour.com/content/210/HR/0000/HR2/image/1928643_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+             https://contents.verygoodtour.com/content/210/AT/0000/VIE/image/1976914_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+              https://contents.verygoodtour.com/content/210/TR/0000/KAP/image/1928797_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+             https://contents.verygoodtour.com/content/210/SI/0000/SB1/image/1390690_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+              https://contents.verygoodtour.com/content/210/GB/0000/LON/image/1847034_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+            https://contents.verygoodtour.com/content/210/HR/0000/DBV/image/575133_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidess"
+              src="
+              https://contents.verygoodtour.com/content/210/HR/0000/KLC/image/1859626_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+
+            <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+                showDivs((slideIndex += n));
+              }
+              function plusDivs1(n) {
+                showDivs1((slideIndex += n));
+              }
+
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slidess");
+                if (n > x.length) {
+                  slideIndex = 1;
+                }
+                if (n < 1) {
+                  slideIndex = x.length;
+                }
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+              }
+            </script>
+          </div>
+
+          <div class="img3">
+            <span style="font-size: 28px">연령별 선호 상품</span>
+            <button class="button-black-left2" onclick="plusDivs1(-1)">
+              &#10094;
+
+              <button class="button-blac-right2" onclick="plusDivs1(1)">
+                &#10095;
+              </button>
+            </button>
+            <img
+              class="slidesss"
+              src="
+                https://contents.verygoodtour.com/content/210/FR/0000/SXB/image/1868045_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+           https://contents.verygoodtour.com/content/210/PL/0000/Z07/image/1845495_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+          https://contents.verygoodtour.com/content/210/HR/0000/CD1/image/1859675_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+           https://contents.verygoodtour.com/content/210/GR/0000/JTR/image/1946494_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+           https://contents.verygoodtour.com/content/210/HU/0000/BUD/image/1927999_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+            https://contents.verygoodtour.com/content/210/CZ/0000/PRG/image/1981618_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+
+            <img
+              class="slidesss"
+              src="
+            https://contents.verygoodtour.com/content/210/PT/0000/OPO/image/1972300_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+         https://contents.verygoodtour.com/content/220/AE/0000/DXB/image/1903754_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+            <img
+              class="slidesss"
+              src="
+           https://contents.verygoodtour.com/content/210/SE/0000/STO/image/1963751_1.jpg"
+              style="width: 100%; height: 90%"
+            />
+          </div>
+          <script>
+            var slideIndex = 1;
+            showDivs1(slideIndex);
+
+            function showDivs1(n) {
+              var i;
+              var x = document.getElementsByClassName("slidesss");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+        <div class="button1">
+          <p>
+            <b> 많이 찾는 여행지</b>
+            <button>북해도</button>
+            <button>오키나와</button>
+            <button>오사카</button>
+            <button>동경</button>
+            <button>후쿠오카</button>
+            <button>나고야</button><br />
+            <button>다카마츠</button>
+
+            <button>교토</button>
+            <button>삿포로</button>
+            <button>도야마</button>
+          </p>
+        </div>
+      </div>
+      <div
+        id="bb"
+        style="margin-left: 450px; margin-top: 50px; margin-bottom: 60px"
+      >
+        <div class="sj"><b>솔직한여행이야기</b></div>
+        <div class="sk">
+          <img
+            src="https://contents.verygoodtour.com/content/310/JP/J12/J60/image/1985839.jpg"
+            style="width: 580px; height: 300px"
+          />
+        </div>
+        <div class="jj">
+          <p>어느 유월 하순의 청정 북해도 자연과 함께한 멋진 여정</p>
+          <p1>
+            [딸이만든 우리엄마 온천여행] 노보리베츠숙박/게요리/북해도/핵심 4일
+          </p1>
+          <p style="font-size: 16px; color: black; margin-top: 25px">
+            청정 북해도 3박4일 온천과 청정 자연 그리고 북해도 맛자랑 만남과의
+            여정 잘 마치고 왔습니다. 일본 투어는 여러곳을 자유투어로 다녀본 터라
+            패키지...
+          </p>
+          <span>김**ㅣ2023.06.28</span>
+        </div>
+      </div>
+      <div class="fu">
+        <div class="tm">
+          <div class="tn">
+            <span> 테마여행</span>
+
+            <button class="button-black-left3" onclick="plusDivs1(-1)">
+              &#10094;
+
+              <button class="button-blac-right3" onclick="plusDivs1(1)">
+                &#10095;
+              </button>
+            </button>
+          </div>
+          <img
+            class="tm1"
+            src="https://contents.verygoodtour.com/FILE/DIABLO/BANNER/VG2/101/2_1_11.jpg"
+          />
+
+          <img
+            class="tm1"
+            src="https://contents.verygoodtour.com/FILE/DIABLO/BANNER/VG2/101/2_1_8.jpg"
+          />
+
+          <img
+            class="tm1"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema3.jpg"
+          />
+        </div>
+        <div class="ha">
+          <div class="hj">
+            <b><p>동부지중해 크루즈</p></b>
+            <p1>MSC 스플렌디다 호</p1>
+          </div>
+          <div class="jz">
+            <b> <p>걸으며 만나는 치유의 길</p></b>
+            <p1>산티아고 순례길</p1>
+          </div>
+          <div class="jh">
+            <b> <p>클래스이 차이</p></b>
+            <p1>비지니스 상품전</p1>
+          </div>
+        </div>
+
+        <div class="oo">참좋은여행 VLOG</div>
+        <div class="ii">
+          <iframe
+            width="740px"
+            height="420px"
+            src="https://www.youtube.com/embed/suRta8NQdrE"
+            title="북유럽 10일 여행하면 꼭 보게 되는 16가지 풍경 🇩🇰 🇫🇮 🇳🇴 🇸🇪"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="qq">
+          <p>북유럽 4국10일</p>
+          <p1> 오키나와 BEST 10 </p1>
+          <p2> 뉴질랜드 BEST 3 </p2>
+        </div>
+      </div>
+      <div style="background-color: #ebedf3; height: 50px; width: 100%"></div>
+      <div
+        class="f1"
+        style="
+          overflow: hidden;
+          display: block;
+          margin-left: 450px;
+          margin-top: 30px;
+        "
+      >
+        <div
+          style="float: left; width: 235.59px; height: 40px; text-align: center"
+        >
+          <p>부서별 연락처</p>
+        </div>
+
+        <div
+          style="float: left; width: 235.59px; text-align: center; height: 40px"
+        >
+          <p>무이자 할부안내</p>
+        </div>
+
+        <div
+          style="float: left; text-align: center; width: 235.59px; height: 40px"
+        >
+          <p>포인트안내</p>
+        </div>
+        <div
+          style="float: left; text-align: center; width: 235.59px; height: 40px"
+        >
+          <p>법인/단체문의</p>
+        </div>
+
+        <div
+          style="
+            text-align: center;
+            width: 235.59px;
+            height: 40px;
+            overflow: hidden;
+          "
+        >
+          <p>여행문의</p>
+        </div>
+      </div>
+      <div class="a7">
+        <div class="a8">
+          <p>대표전화번호</p>
+          <p1> 1588-7557 </p1>
+          <div style="font-size: 16px; margin-left: 50px">
+            <img
+              src="https://www.verygoodtour.com/Images/2013/Icon/ico_headphones.png"
+            /><span style="font-size: 16px; font-weight: 700; margin-left: 20px"
+              >고객센터</span
+            >
+          </div>
+        </div>
+        <div style="float: left; margin-left: 88px; margin-top: 24px">
+          <p style="font-weight: 700">평일 09:00 ~ 18:00</p>
+          <p>주말 및 공휴일 휴무</p>
+        </div>
+        <div style="overflow: hidden">
+          <p style="font-weight: 700; margin-left: 170px; margin-bottom: 10px">
+            공지사항
+          </p>
+          <p style="margin-left: 200px">
+            6월 베스트여행 후기 이벤트 당첨발표
+            <span style="margin-left: 150px; color: #056099c7; font-size: 14px"
+              >+더보기</span
+            >
+          </p>
+          <div
+            style="
+              float: left;
+              margin-left: 200px;
+              padding-right: 34px;
+              font-size: 16px;
+              margin-top: 15px;
+              font-weight: 700;
+            "
+          >
+            예약/결제
+          </div>
+          <div
+            style="
+              float: left;
+              padding-right: 34px;
+              font-size: 16px;
+              font-weight: 700;
+              margin-top: 15px;
+            "
+          >
+            가이드 여행가이드북
+          </div>
+          <div
+            style="
+              float: left;
+              font-weight: 700;
+              font-size: 16px;
+              margin-top: 15px;
+            "
+          >
+            여행비서 '큐브'
+          </div>
+        </div>
+        <div class="a77">
+          <a href="">개인정보처리방침</a>
+          <a href="">회사소개</a>
+          <a href="">찾아오시는길</a>
+          <a href="">이용약관</a>
+          <a href="">여행자보험</a>
+          <a href="">고객센터</a>
+          <a1 href="https://story.kakao.com/ch/verygoodtour"
+            ><img style="width: 35px;height: 34px; margin-left: 100px;"
+            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSCEhrMB_xcr2qCjrozHpFHJfGF9Kf69A6FCKD2kmEq6IXNpJer7GOApc&usqp=CAU/></a1
+          >
+          <a1 href="https://pf.kakao.com/_zbjGE">
+            <img
+              style="width: 35px; height: 32px; margin-left: 3px"
+              src="data:image/png;base64,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"
+            />
+          </a1>
+          <a1 href="https://www.facebook.com/verygoodtour">
+            <img
+              style="width: 45px; height: 45px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3R804VohPsFI2hQvx_ehLRUZ8Fdb6vWmd7Q&usqp=CAU"
+            />
+          </a1>
+          <a1 href="https://www.instagram.com/verygoodtour_official">
+            <img
+              style="width: 35px; height: 32px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTN_dxg-ZmE37T_XXtQCNj-WRXaruyPCvA4FsZ3TbK_SC1MTD4DNWnJF81hYnH8Jkgxyw&usqp=CAU"
+            />
+          </a1>
+          <a1 href="https://blog.naver.com/vgt0901">
+            <img
+              style="width: 80px; height: 42px"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX3O-lwCoJg-dsQGrt4mRVgjGV2_EKFjF9Cw&usqp=CAU"
+            />
+          </a1>
+          <a1 href="https://www.youtube.com/user/verygoodtourofficial"
+            ><img
+              style="width: 35px; height: 45px"
+              src="data:image/png;base64,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"
+          /></a1>
+        </div>
+        <div class="pp1">
+          <div class="pp2">
+            <p>참좋은 여행(주)</p>
+          </div>
+          <div>
+            <p>대표이사:조현문,이종혁</p>
+            대표전화 : 1588-5757
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

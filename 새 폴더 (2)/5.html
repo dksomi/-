@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      #header {
+        width: 1900px;
+      }
+      #sub_wrap {
+        width: 1600px;
+        height: 47px;
+        margin-top: 20px;
+        margin-left: 300px;
+      }
+
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: block;
+      }
+      body {
+        font-size: 16px;
+        color: #363636;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+      html {
+        font-family: "Nanum Gothic", sans-serif;
+      }
+
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: block;
+      }
+      #header.sub_wrap.logoWrap {
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+      #sub_wrap:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      .logoWrap img {
+        width: 150px;
+        height: 47px;
+      }
+      img {
+        border: 0;
+        vertical-align: middle;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        overflow-clip-margin: content-box;
+        overflow: clip;
+      }
+      a {
+        counter-reset: inherit;
+      }
+      a {
+        cursor: pointer;
+      }
+      #box1 {
+        position: absolute;
+        right: 350px;
+        top: 20px;
+      }
+      .ev1 {
+        position: absolute;
+        top: 20px;
+        right: 910px;
+        z-index: 2;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: block;
+      }
+      .hide_name {
+        position: absolute;
+        left: -999em;
+        top: -999em;
+        display: inline-block;
+        text-indent: -999em;
+        overflow: hidden;
+      }
+      #menu.sub_wrap {
+        text-align: left;
+      }
+      .all_menu_view {
+        width: 158px;
+        height: left;
+        vertical-align: middle;
+      }
+      #main_sub {
+        position: absolute;
+        width: 1180px;
+        height: 648px;
+        outline: 1px solid #c3c3c3;
+        z-index: 40;
+        margin: 0 auto;
+        display: none;
+        background-color: #fff;
+        left: 0;
+        top: 39px;
+      }
+      #menu_box ul,
+      menu_ul {
+        position: relative;
+        width: 870px;
+        height: 39px;
+        float: left;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+      }
+      #menu_box ul.menu.ul li {
+        float: left;
+        position: relative;
+        vertical-align: middle;
+        text-align: center;
+      }
+      li {
+        display: list-item;
+      }
+      #mem_box {
+        position: absolute;
+        width: 350px;
+        left: 830px;
+        top: 4px;
+        z-index: 2;
+      }
+      #mem_box ul > li > a {
+        font-size: 16px;
+        color: black;
+        font-weight: 700;
+      }
+      .a00 {
+        margin-left: 300px;
+      }
+      .a00 > a {
+        color: white;
+        padding-left: 30px;
+      }
+      .f0 > h3 a {
+        color: #fff;
+        display: block;
+        font-size: 32px;
+
+        text-align: center;
+        line-height: 77px;
+        height: 77px;
+        font-weight: 400;
+      }
+      .a-4 {
+        color: rgba(201, 198, 198, 0.938);
+        font-size: 32px;
+        text-align: center;
+        height: 77px;
+        font-weight: 400;
+      }
+      .a-4 > a {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    < class="header">
+    <div id="sub_wrap">
+      <div class="logowrap">
+        <a href="/">
+          <img src="https://www.verygoodtour.com/Images/2013/Common/logo.png" />
+        </a>
+      </div>
+      <div id="box1">
+        <div id="searchform">
+          <label for="search_bar" class="hide"></label>
+          <input
+            autocomplete="off"
+            id="search_bar"
+            type="text"
+            placeholder="어디로 떠나고 싶으세요?"
+            name="keyword"
+            style="
+              width: 550px;
+              height: 55px;
+              border-radius: 54px;
+              border-color: rgb(47, 81, 190);
+              font-size: 16px;
+            "
+          />
+        </div>
+      </div>
+      <div class="ev1">
+        <a href="/Event/EventPromotion?evtno=20230627">
+          <img
+            src="https://contents.verygoodtour.com/Images/pc/aside/main_aside_common_230717.jpg"
+            alt
+          />
+        </a>
+      </div>
+    </div>
+    <div id="menu">
+      <div class="main_menu">
+        <h2 class="hide_name">메인메뉴</h2>
+        <div
+          id="menu_box"
+          style="margin-top: 30px; font-size: 23px; margin-left: 330px"
+        >
+          <div id="all_menu_view">
+            <div class="all_menu_view_bt">
+              <a
+                href="javascript:void(0);"
+                title="전체메뉴"
+                style="text-decoration: none"
+                >전체메뉴</a
+              >
+            </div>
+            <div id="main_sub"></div>
+
+            <ul class="menu_u1" style="font-size: 22px">
+              <li data-menucode="101" class="select" style="margin-left: 100px">
+                <a
+                  href="Home/PackageMain?MenuCode=101"
+                  title="해외여행"
+                  style="text-decoration: none"
+                  >해외여행</a
+                >
+              </li>
+              <li data-menucode="105" class="select" style="margin-left: 30px">
+                <a
+                  href="Home/PackageMain?MenuCode=101"
+                  title="국내/제주"
+                  style="text-decoration: none"
+                  >국내/제주</a
+                >
+              </li>
+              <li data-menucode="102" class="select" style="margin-left: 30px">
+                <a
+                  href="Home/PackageMain?MenuCode=101"
+                  title="프리미엄"
+                  style="text-decoration: none"
+                  >프리미엄</a
+                >
+              </li>
+              <li
+                data-menucode="101"
+                class="select"
+                style="margin-left: 30px; color: black"
+              >
+                <a
+                  href="Home/PackageMain?MenuCode=101"
+                  title="지방출발"
+                  style="text-decoration: none"
+                  >지방출발</a
+                >
+              </li>
+              <li data-menucode="101" class="select" style="margin-left: 30px">
+                <a
+                  href="Home/PackageMain?MenuCode=101"
+                  title="항공/호텔"
+                  style="text-decoration: none"
+                  >항공/호텔</a
+                >
+              </li>
+              <li data-menucode="101" class="select" style="margin-left: 30px">
+                <a
+                  href="Home/PackageMain?MenuCode=101"
+                  title="라르고/테마"
+                  style="text-decoration: none"
+                  >라르고/테마</a
+                >
+              </li>
+            </ul>
+            <div id="mem_box" style="margin-top: 100px">
+              <ul>
+                <li>
+                  <a
+                    href="/Login"
+                    title="로그인/회원가입"
+                    style="text-decoration: none"
+                    >로그인/회원가입</a
+                  >
+                </li>
+                <li style="padding-left: 20px">
+                  <a
+                    href="Board/BoardCommonList?MasterSeq=1&menuCode=10901"
+                    title="여행후기"
+                    style="text-decoration: none"
+                    >여행후기</a
+                  >
+                </li>
+                <li style="padding-left: 20px">
+                  <a
+                    href="Support/Main"
+                    title="고객센터"
+                    style="text-decoration: none"
+                    >고객센터</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          id="a0"
+          style="
+            background-color: #1351a5;
+            height: 60px;
+            font-size: 16px;
+            margin-top: 40px;
+          "
+        >
+          <div class="a00" style="padding-top: 20px">
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >연휴출발</a
+            >
+            <a href="Home/PackageMain" style="text-decoration: none">유럽</a>
+            <a href="Home/PackageMain" style="text-decoration: none">동남아</a>
+            <a href="Home/PackageMain" style="text-decoration: none">일본</a>
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >대만/홍콩/마카오</a
+            >
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >중국/몽골</a
+            >
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >호주/뉴질랜드</a
+            >
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >괌/사이판</a
+            >
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >미국/캐나다/하와이</a
+            >
+            <a href="Home/PackageMain" style="text-decoration: none">중남미</a>
+            <a href="Home/PackageMain" style="text-decoration: none"
+              >중동/아프리카/인도</a
+            >
+          </div>
+        </div>
+        <div class="img" style="max-width: 1920px; height: 780px">
+          <img
+            class="slides"
+            src="
+          https://contents.verygoodtour.com/Images/pc/package/main/p_main_20230628.jpg"
+            style="width: 100%; height: 90%; position: relative"
+          />
+
+          <img
+            class="slides"
+            src="
+          https://contents.verygoodtour.com/Images/pc/package/main/p_main_13493.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13364.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13374.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13551.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13420.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13430.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13518.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13497.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slides"
+            src="https://contents.verygoodtour.com/Images/pc/package/main/p_main_13526.jpg"
+            style="width: 100%; height: 90%"
+          />
+        </div>
+        <script>
+          var myIndex = 0;
+          carousel();
+
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+              myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+          }
+        </script>
+
+        <div
+          class="f0"
+          style="
+            width: 590px;
+            height: 77px;
+            margin-left: 450px;
+            background-color: #0095f1;
+            float: left;
+          "
+        >
+          <h3>
+            <a href="" style="text-decoration: none"> 어디로 갈까요?</a>
+          </h3>
+        </div>
+        <div
+          class="a-4"
+          style="
+            width: 590px;
+            height: 77px;
+            margin-left: 1025px;
+            background-color: #ffffff49;
+          "
+        >
+          <a href="" style="text-decoration: none">누구와 떠날까요?</a>
+          <div class="a-5"></div>
+        </div>
+        <div style="margin-left: 450px">
+          <div
+            style="
+              float: left;
+              width: 124px;
+              height: 60px;
+              font-size: 18px;
+              color: #595955;
+              padding-top: 20px;
+              padding-left: 30px;
+              font-weight: 700;
+            "
+          >
+            <span>유럽/중동</span>
+          </div>
+          <div
+            style="
+              font-weight: 700;
+              color: #595955;
+              padding-top: 20px;
+              padding-left: 30px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              font-size: 18px;
+              float: left;
+              width: 210px;
+              height: 60px;
+            "
+          >
+            <span>미국/캐나다/중남미</span>
+          </div>
+          <div
+            style="
+              font-size: 18px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              float: left;
+              padding-top: 20px;
+              padding-left: 30px;
+              color: #595955;
+              width: 180px;
+              height: 60px;
+              font-weight: 700;
+            "
+          >
+            <span> 호주/뉴질랜드</span>
+          </div>
+          <div
+            style="
+              padding-top: 20px;
+              padding-left: 30px;
+              font-size: 18px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              float: left;
+              width: 145px;
+              color: #595955;
+              height: 60px;
+              font-weight: 700;
+            "
+          >
+            <span>괌/사이판</span>
+          </div>
+          <div
+            style="
+              padding-top: 20px;
+              padding-left: 30px;
+              font-size: 18px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              float: left;
+              font-weight: 700;
+              width: 116px;
+              color: #595955;
+              height: 60px;
+            "
+          >
+            <span>동남아</span>
+          </div>
+          <div
+            style="
+              padding-top: 20px;
+              padding-left: 30px;
+              font-size: 18px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              float: left;
+              width: 182px;
+              font-weight: 700;
+              height: 60px;
+              color: #595955;
+            "
+          >
+            <span> 대만/홍콩/마카오</span>
+          </div>
+          <div
+            style="
+              padding-top: 20px;
+              padding-left: 30px;
+              font-size: 18px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              float: left;
+              width: 100px;
+              font-weight: 700;
+              height: 60px;
+              color: #595955;
+            "
+          >
+            <span> 일본</span>
+          </div>
+          <div
+            style="
+              padding-top: 20px;
+              padding-left: 30px;
+              font-size: 18px;
+              border-left: 1px solid rgba(221, 219, 219, 0.808);
+              float: left;
+              font-weight: 700;
+              width: 130px;
+              color: #595955;
+              height: 60px;
+            "
+          >
+            <span>중국/몽골</span>
+          </div>
+        </div>
+        <div
+          class="img"
+          style="
+            padding-top: 20px;
+
+            width: 580px;
+            height: 435px;
+            margin-left: 450px;
+            padding-top: 25px;
+            float: left;
+          "
+        >
+          <span style="font-size: 28px">주목할상품</span>
+          <button
+            class="button-black-left"
+            style="
+              margin-left: 320px;
+              background-color: white;
+              border: 1px #c3c3c3af;
+              height: 44px;
+              width: 44px;
+              margin-bottom: 20px;
+            "
+            onclick="plusDivs(-1)"
+          >
+            &#10094;
+          </button>
+          <button
+            class="button-blac-right"
+            style="
+              background-color: white;
+              border: 1px #c3c3c3af;
+              height: 44px;
+              width: 44px;
+              margin-bottom: 20px;
+            "
+            onclick="plusDivs(1)"
+          >
+            &#10095;
+          </button>
+          <img
+            class="slidess"
+            src="
+              https://contents.verygoodtour.com/content/350/IN/0000/AGR/image/1853630_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+                  https://contents.verygoodtour.com/content/210/ES/0000/BCN/image/1901403_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+             https://contents.verygoodtour.com/content/210/SE/0000/STO/image/1928620_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+              https://contents.verygoodtour.com/content/210/HR/0000/HR2/image/1928643_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+             https://contents.verygoodtour.com/content/210/AT/0000/VIE/image/1976914_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+              https://contents.verygoodtour.com/content/210/TR/0000/KAP/image/1928797_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+             https://contents.verygoodtour.com/content/210/SI/0000/SB1/image/1390690_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+              https://contents.verygoodtour.com/content/210/GB/0000/LON/image/1847034_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+            https://contents.verygoodtour.com/content/210/HR/0000/DBV/image/575133_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidess"
+            src="
+              https://contents.verygoodtour.com/content/210/HR/0000/KLC/image/1859626_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+            function plusDivs1(n) {
+              showDivs1((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slidess");
+              if (n > x.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = x.length;
+              }
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              x[slideIndex - 1].style.display = "block";
+            }
+          </script>
+        </div>
+
+        <div
+          class="img"
+          style="
+            max-width: 580px;
+            height: 435px;
+            margin-left: 1050px;
+            margin-top: 62px;
+            padding-top: 25px;
+          "
+        >
+          <span style="font-size: 28px">연령별 선호 상품</span>
+          <button
+            class="button-black-left"
+            style="
+              margin-left: 280px;
+              background-color: white;
+              border: 1px #c3c3c3da;
+              height: 44px;
+              width: 44px;
+              margin-bottom: 20px;
+            "
+            onclick="plusDivs1(-1)"
+          >
+            &#10094;
+
+            <button
+              class="button-blac-right"
+              style="
+                height: 44px;
+                width: 44px;
+                background-color: white;
+                border: 1px #c3c3c3da;
+              "
+              onclick="plusDivs1(1)"
+            >
+              &#10095;
+            </button>
+          </button>
+          <img
+            class="slidesss"
+            src="
+                https://contents.verygoodtour.com/content/210/FR/0000/SXB/image/1868045_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+           https://contents.verygoodtour.com/content/210/PL/0000/Z07/image/1845495_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+          https://contents.verygoodtour.com/content/210/HR/0000/CD1/image/1859675_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+           https://contents.verygoodtour.com/content/210/GR/0000/JTR/image/1946494_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+           https://contents.verygoodtour.com/content/210/HU/0000/BUD/image/1927999_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+            https://contents.verygoodtour.com/content/210/CZ/0000/PRG/image/1981618_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+
+          <img
+            class="slidesss"
+            src="
+            https://contents.verygoodtour.com/content/210/PT/0000/OPO/image/1972300_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+         https://contents.verygoodtour.com/content/220/AE/0000/DXB/image/1903754_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+          <img
+            class="slidesss"
+            src="
+           https://contents.verygoodtour.com/content/210/SE/0000/STO/image/1963751_1.jpg"
+            style="width: 100%; height: 90%"
+          />
+        </div>
+        <script>
+          var slideIndex = 1;
+          showDivs1(slideIndex);
+
+          function showDivs1(n) {
+            var i;
+            var x = document.getElementsByClassName("slidesss");
+            if (n > x.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = x.length;
+            }
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+          }
+        </script>
+      </div>
+      <div class="button" style="margin-left: 450px; margin-top: 45px">
+        <p style="font-size: 28px">
+          <b> 많이 찾는 여행지</b>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            북해도
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            오키나와
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            오사카
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            동경
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            후쿠오카
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            나고야</button
+          ><br />
+          <button
+            style="
+              background-color: white;
+              margin-left: 208px;
+              margin-top: 10px;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+            "
+          >
+            다카마츠
+          </button>
+
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              color: #0095f1;
+              font-weight: bold;
+              margin-right: 20px;
+              margin-top: 10px;
+            "
+          >
+            교토
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              font-weight: bold;
+              color: #0095f1;
+              margin-right: 20px;
+              margin-top: 10px;
+            "
+          >
+            삿포로
+          </button>
+          <button
+            style="
+              background-color: white;
+              width: 130px;
+              height: 49px;
+              font-size: 18px;
+              border: 1px solid #009eff;
+              border-radius: 49px;
+              font-weight: bold;
+              color: #0095f1;
+              margin-right: 20px;
+              margin-top: 10px;
+            "
+          >
+            도야마
+          </button>
+        </p>
+      </div>
+    </div>
+    <div
+      id="bb"
+      style="margin-left: 450px; margin-top: 50px; margin-bottom: 60px"
+    >
+      <div class="sj" style="font-size: 28px"><b>솔직한여행이야기</b></div>
+      <div
+        style="
+          width: 200px;
+          height: 150px;
+          border: 1px solid rgba(224, 221, 221, 0.959);
+          float: left;
+        "
+      >
+        <img
+          src="https://contents.verygoodtour.com/content/310/JP/J12/J60/image/1985839.jpg"
+          style="width: 580px; height: 300px"
+        />
+      </div>
+      <div
+        style="
+          width: 600px;
+          height: 300px;
+          margin-left: 580px;
+          border: 1px solid rgba(224, 221, 221, 0.959);
+          padding: 40px 40px 26px;
+        "
+      >
+        <p
+          style="
+            font-size: 24px;
+            color: black;
+            font-weight: 400;
+            margin-bottom: 12px;
+          "
+        >
+          어느 유월 하순의 청정 북해도 자연과 함께한 멋진 여정
+        </p>
+        <p style="font-size: 16px; color: blue; margin-bottom: 25px">
+          [딸이만든 우리엄마 온천여행] 노보리베츠숙박/게요리/북해도/핵심 4일
+        </p>
+        <p style="font-size: 16px; color: black; margin-top: 25px">
+          청정 북해도 3박4일 온천과 청정 자연 그리고 북해도 맛자랑 만남과의 여정
+          잘 마치고 왔습니다. 일본 투어는 여러곳을 자유투어로 다녀본 터라
+          패키지...
+        </p>
+        <p
+          style="
+            font-size: 14px;
+            color: #797878b0;
+            margin-bottom: 30px;
+            margin-left: 390px;
+          "
+        >
+          김**ㅣ2023.06.28
+        </p>
+      </div>
+    </div>
+    <div class="fu" style="background-color: #ebedf3">
+      <div class="tm" style="margin-left: 450px">
+        <div style="font-size: 28px; padding-top: 70px">
+          테마여행
+
+          <button
+            class="button-black-left"
+            style="margin-left: 950px; width: 44px; height: 44px"
+            onclick="plusDivs1(-1)"
+          >
+            &#10094;
+
+            <button
+              class="button-blac-right"
+              style="width: 44px; height: 44px"
+              onclick="plusDivs1(1)"
+            >
+              &#10095;
+            </button>
+          </button>
+        </div>
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/FILE/DIABLO/BANNER/VG2/101/2_1_11.jpg"
+          style="width: 380px; height: 285px"
+        />
+
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/FILE/DIABLO/BANNER/VG2/101/2_1_8.jpg"
+          style="width: 380px; height: 285px"
+        />
+
+        <img
+          class="tm1"
+          src="https://contents.verygoodtour.com/Images/pc/package/main/thema_banner/thema3.jpg"
+          style="width: 380px; height: 285px"
+        />
+      </div>
+      <div style="margin-left: 450px; margin-bottom: 85px">
+        <div style="float: left; width: 380px; height: 80px; font-size: 18px">
+          <b
+            ><p style="font-size: 24px; margin-left: 40px; margin-top: 10px">
+              동부지중해 크루즈
+            </p></b
+          >
+          <p style="margin-left: 40px; margin-top: 5px">MSC 스플렌디다 호</p>
+        </div>
+        <div style="float: left; width: 380px; height: 80px; font-size: 18px">
+          <b>
+            <p style="font-size: 24px; margin-left: 40px; margin-top: 10px">
+              걸으며 만나는 치유의 길
+            </p></b
+          >
+          <p style="margin-left: 40px; margin-top: 5px">산티아고 순례길</p>
+        </div>
+        <div style="float: left; width: 380px; height: 80px; font-size: 18px">
+          <b>
+            <p style="font-size: 24px; margin-left: 40px; margin-top: 10px">
+              클래스이 차이
+            </p></b
+          >
+          <p style="margin-left: 40px; margin-top: 5px">비지니스 상품전</p>
+        </div>
+      </div>
+
+      <div style="margin-left: 450px; font-size: 28px; padding-top: 80px">
+        참좋은여행 VLOG
+      </div>
+      <div style="width: 740px; height: 420px; margin-left: 450px; float: left">
+        <iframe
+          width="740px"
+          height="420px"
+          src="https://www.youtube.com/embed/suRta8NQdrE"
+          title="북유럽 10일 여행하면 꼭 보게 되는 16가지 풍경 🇩🇰 🇫🇮 🇳🇴 🇸🇪"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div style="width: 400px; height: 420px; margin-left: 1190px">
+        <p
+          style="
+            height: 140px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #0274bbe3;
+            font-weight: 700;
+            padding: 50px 40px 0 190px;
+          "
+        >
+          북유럽 4국10일
+        </p>
+        <p
+          style="
+            background-color: #fff;
+            height: 140px;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 50px 40px 0 190px;
+          "
+        >
+          오키나와 BEST 10
+        </p>
+        <p
+          style="
+            background-color: #fff;
+            height: 140px;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 50px 40px 0 190px;
+          "
+        >
+          뉴질랜드 BEST 3
+        </p>
+      </div>
+    </div>
+    <div style="background-color: #ebedf3; height: 50px; width: 100%"></div>
+    <div
+      class="f1"
+      style="
+        display: block;
+        margin-left: 450px;
+        margin-top: 30px;
+        overflow: hidden;
+      "
+    >
+      <div
+        style="float: left; width: 235.59px; height: 40px; text-align: center"
+      >
+        <p>부서별 연락처</p>
+      </div>
+
+      <div
+        style="float: left; width: 235.59px; text-align: center; height: 40px"
+      >
+        <p>무이자 할부안내</p>
+      </div>
+
+      <div
+        style="float: left; text-align: center; width: 235.59px; height: 40px"
+      >
+        <p>포인트안내</p>
+      </div>
+      <div
+        style="float: left; text-align: center; width: 235.59px; height: 40px"
+      >
+        <p>법인/단체문의</p>
+      </div>
+
+      <div
+        style="float: left; text-align: center; width: 235.59px; height: 40px"
+      >
+        <p>여행문의</p>
+      </div>
+    </div>
+    <div class="mm1" style="margin: 450px">
+      <p>대표전화번호</p>
+      <p style="color: rgba(54, 86, 230, 0.822)">1588-7557</p>
+      <img
+        src="https://www.verygoodtour.com/Images/2013/Icon/ico_headphones.png"
+      />
+      <p>고객센터 평일 09:00 ~ 18:00 주말 및 공휴일 휴무</p>
+    </div>
+  </body>
+</html>
